@@ -14,28 +14,34 @@ body {
   background-color: #EEEEEE;
   -webkit-font-smoothing: antialiased;
   font-size: 32px;
-  min-width: 1920px;
+  min-width: 1280px;
 }
 
 button {
- cursor: pointer;
- border-radius: 40px;
- border-width: 0px;
- font-size: 32px;
- color:#818181;
+  cursor: pointer;
+  border-radius: 40px;
+  border-width: 0px;
+  font-size: 32px;
+  color:#818181;
   background-color: #E4E8F4;
   transition:background-color, .2s ease-out;
+  height: 60px;
 }
 
 button:hover{
   background-color: #e4e8f480;
 }
 
+button > img{
+  width: 30px;
+  height: 30px;
+}
+
 header{
   background-color: white;
   border-bottom-left-radius: 63px;
   border-bottom-right-radius: 63px;
-  width: 98%;
+  width: 95%;
 }
 
 
@@ -61,37 +67,40 @@ header{
   justify-content: space-around;
 }
 
-.log_in{
-  width: 157px;
-  height: 56px;
-}
+
 
 .night_mode{
-  width: 60px;
   height: 60px;
+  min-width: 60px;
 }
 
-.header_link{
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  text-decoration: none;
-  color:black;
+.log_in{
+  width: 157px;
 }
 
 .catalog_button{
   width: 270px;
-  height: 56px;
 }
 
 .lang_button{
   width: 244px;
-  height: 56px;
 }
 
 .cart{
   width: 300px;
-  height: 56px;
+}
+
+.header_link{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  color:black;
+  transition: color .2s;
+}
+
+.header_link:hover{
+  color:red;
 }
 
 .search_bar{
